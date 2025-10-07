@@ -1,14 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <header></header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>O·LEA</title>
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/header.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="logo">
+        O·LEA
+        <a href="index.html"></a>
+      </div>
+
+      <nav class="nav-container">
+        <ul class="menu">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="#">PRODUCTS</a></li>
+          <li><a href="#">ABOUT ME</a></li>
+          <li>
+            <img id="kurv" src="img/indkøbskurv.png" alt="kurv" />
+          </li>
+        </ul>
+      </nav>
+
+      <hr class="divider" />
+
+      <div class="search">
+        <button class="search-btn" aria-label="Søg">
+          <span class="search-icon" aria-hidden="true"></span>
+          <span class="search-text">SEARCH…</span>
+        </button>
+      </div>
+
+      <div class="burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </header>
+
+    <script src="js/header.js"></script>
+
     <main></main>
     <footer></footer>
-    
-</body>
+  </body>
 </html>
