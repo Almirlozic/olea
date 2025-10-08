@@ -1,4 +1,4 @@
-/* Vores font */
+/* font til menuen */
 @font-face {
   font-family: "julius";
   src: url(../fonts/Julius/JuliusSansOne-Regular.ttf);
@@ -122,13 +122,18 @@
   color: #2f2f2f;
   letter-spacing: 0.06em;
   font-family: "julius";
+  transition: background-color 0.3s;
+}
+
+.search-btn:hover {
+  background-color: #b0a18f;
 }
 
 .search-icon {
   width: 16px;
   height: 16px;
-  border: 2px solid #2f2f2f;
-  border-radius: 50%;
+  border: 1px solid #2f2f2f;
+  border-radius: 90%;
   position: relative;
 }
 
@@ -138,7 +143,7 @@
   right: -5px;
   bottom: -5px;
   width: 6px;
-  height: 2px;
+  height: 1.5px;
   background: #2f2f2f;
   transform: rotate(-40deg);
   transform-origin: center;
@@ -163,7 +168,7 @@
   .logo {
     grid-column: 1;
     grid-row: 1;
-    font-size: 2.2rem;
+    font-size: 2.5rem;
     font-weight: 500;
   }
 
@@ -205,12 +210,12 @@
   .divider {
     grid-column: 1 / 3;
     grid-row: 2;
-    width: 100%;
+    width: 86%;
     height: 1px;
-    background-color: #2f2f2f;
+    background-color: #373737;
     border: none;
     display: block;
-    margin-right: 10px;
+    margin-left: -2px;
   }
 
   .search {
