@@ -4,17 +4,22 @@
   src: url(../fonts/Julius/JuliusSansOne-Regular.ttf);
 }
 
+/* ----------- HEADER ----------- */
 .header {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  background-color: #f2eeeb;
+  background-color: #F2EEEB;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 3rem 1.5rem;
-  z-index: 999;
+  z-index: 9999;
+  box-shadow: none;
+  opacity: 0; 
+  transform: translateY(-30px);
+  transition: all 0.5s ease; 
 }
 
 .divider {
@@ -43,7 +48,7 @@
   flex-direction: column;
   justify-content: space-between;
   cursor: pointer;
-  z-index: 1000;
+  z-index: 10000;
 }
 
 .line {
@@ -149,6 +154,28 @@
   transform-origin: center;
 }
 
+/* ----------- HERO SECTION ----------- */
+.hero {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  top: -220px;
+}
+.hero img {
+  width: 100%;
+  height: 100vh; 
+  object-fit: cover; 
+  display: block;
+}
+.header-scrolled {
+  position: sticky;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  transform: translateY(0);
+  opacity: 1;
+}
+
 /* ====== DESKTOP VERSION ====== */
 @media (min-width: 768px) {
   .burger {
@@ -184,7 +211,7 @@
     gap: 3rem;
     position: static;
     background: none;
-    padding: 0.1;
+    padding: 0;
     list-style: none;
     font-family: "julius";
   }
@@ -229,5 +256,9 @@
     background-color: #d1c3b3;
     color: #2f2f2f;
     font-family: "julius";
+  }
+
+  .hero {
+    margin-top: 160px; /* lidt mere afstand til større header */
   }
 }
