@@ -1,0 +1,75 @@
+
+/* categories css mobile */
+.categories h2 {
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  margin-bottom: 30px;
+  color: #222;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  justify-items: center;
+  margin-bottom: 40px;
+}
+
+.category img {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.category p {
+  font-size: 13px;
+  letter-spacing: 1px;
+  margin-top: 10px;
+  font-weight: 500;
+  color: #111;
+  text-align: center;
+}
+
+.shop-now {
+ display: flex;
+ justify-content: center;
+}
+.shop-btn {
+  background-color: #73672C; 
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  padding: 12px 35px;
+  font-size: 14px;
+  font-weight: 500;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+  cursor: pointer;
+  transition: background 0.2s ease;
+  margin-top: 30px;
+}
+
+.shop-btn:hover {
+  background-color: #73672C;
+}
+
+/* collection css mobil */
+
+.collection {
+  padding: 20px;
+  margin: 100px 15px;
+  background-color: #D7CEC4;
+  border-radius: 50px;
+}
+.collection p {
+  line-height: 1.5;
+}
+
+.collection img {
+  width: 100%;
+  height: auto;
+}
