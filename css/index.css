@@ -1,10 +1,9 @@
 
 /* categories css mobile */
 .categories h2 {
-  font-size: 16px;
   letter-spacing: 1px;
   font-weight: 500;
-  margin-bottom: 30px;
+  margin-bottom: 100px;
   color: #222;
   text-align: center;
   margin-top: 100px;
@@ -72,4 +71,55 @@
 .collection img {
   width: 100%;
   height: auto;
+}
+
+/* css desktop */
+
+@media (min-width: 800px){
+    .categories h2 {
+        font-size: 34px;
+        margin-bottom: 100px;
+        margin-top: 100px;
+    }
+    
+    .category-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+    }
+    
+    .category img {
+        width: 180px;
+        height: 180px;
+    }
+    
+    .category p {
+        font-size: 16px;
+        margin-top: 15px;
+    }
+    
+    .shop-btn {
+        font-size: 16px;
+        padding: 15px 45px;
+    }
+    .collection {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 30px;
+        padding: 40px;
+        margin: 150px 80px;
+    }
+    .collection p {
+        line-height: 2;
+        padding: 20px 0;
+    }
+    .collection img {
+        width: 100%;
+        height: auto;
+        order: 2;
+    }
+    .collection div{
+        order: 2;
+    }
+
+    
 }
