@@ -6,9 +6,12 @@
     <title>O·LEA</title>
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/productlist.css" />
+    <script src="js/productlist.js" defer></script>
   </head>
 
-  <body>
+  <body id="productlist">
     <header class="header">
       <div class="logo">
         O·LEA
@@ -43,7 +46,42 @@
       <script src="js/header.js"></script>
     </header>
 
-    <main></main>
+    <main>
+      <div class="categories">
+        <div class="category-grid">
+          <div class="category" data-category="furniture">
+            <img src="img/livingroom1.png" alt="Living Room" />
+            <p>LIVING ROOM</p>
+          </div>
+          <div class="category" data-category="furniture">
+            <img src="img/dinnigroom.png" alt="Dining Room" />
+            <p>DINING ROOM</p>
+          </div>
+          <div class="category" data-category="furniture">
+            <img src="img/bedroom.png" alt="Bedroom" />
+            <p>BEDROOM</p>
+          </div>
+          <div class="category" data-category="home-decoration">
+            <img src="img/bathroom.png" alt="Bathroom" />
+            <p>BATHROOM</p>
+          </div>
+        </div>
+      </div>
+
+      <hr id="linje" />
+      <div class>
+        <h1>FURNITURE</h1>
+
+        <div class="knapper">
+          <div id="sorting">
+            <button id="sort-high">Pris høj til lav</button>
+            <button id="sort-low">Pris lav til høj</button>
+          </div>
+        </div>
+
+        <section class="productContainer"></section>
+      </div>
+    </main>
     <footer></footer>
   </body>
 </html>
