@@ -1,0 +1,217 @@
+@font-face {
+  font-family: "junge";
+  src: url(../fonts/Junge/Junge-Regular.ttf);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f2eeeb;
+}
+
+main {
+  padding: 20px;
+  font-family: "junge";
+}
+
+#linje {
+  width: 94%;
+  height: 1px;
+  background-color: #373737;
+  border: none;
+  display: block;
+}
+
+h1 {
+  text-align: center;
+  font-size: 40px;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  color: #000000;
+  padding-top: 3rem;
+  font-family: "junge";
+}
+
+.productContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  justify-items: center;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.products {
+  position: relative;
+  background-color: #c7b5a7;
+  overflow: hidden;
+  width: 100%;
+  max-width: 350px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.products:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(158, 158, 158, 0.15);
+}
+
+.products a.readmore {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.products img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  border-radius: 0;
+}
+
+.badge {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 45px;
+  height: 45px;
+  background-color: #c64f4f;
+  color: #fff;
+  font-weight: bold;
+  font-size: 0.9rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 20;
+}
+
+.products .label {
+  position: absolute;
+  top: 19px;
+  right: 16px;
+  background: #c64f4f;
+  color: #fff;
+  padding: 0.5rem 0.8rem;
+  font-weight: bold;
+  border-radius: 4px;
+  z-index: 10;
+  font-size: 0.85rem;
+}
+
+.products.soldout img {
+  opacity: 0.5;
+  filter: grayscale(80%);
+}
+
+/* ====== PRODUKT INFO (under billedet) ====== */
+.product-info {
+  padding: 1.2rem;
+  background-color: #f2eeeb;
+  text-align: left;
+}
+
+.title-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.title-price h3 {
+  font-size: 1rem;
+  color: #000;
+  font-weight: 600;
+  margin: 0;
+  align-items: end;
+}
+
+.title-price .rabat {
+  font-weight: bolder;
+  color: #000;
+}
+
+.category {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  color: #6c6c6c;
+  font-size: 0.8rem;
+  letter-spacing: 0.5px;
+}
+
+.discounted .price {
+  text-decoration: line-through;
+  color: #9b9b9b;
+  font-size: 1rem;
+  margin-top: 0.9rem;
+}
+
+.pris {
+  margin-top: 2rem;
+}
+
+/* Farveprikker */
+.color-dots {
+  display: flex;
+  gap: 0.6rem;
+  margin-top: 0.8rem;
+}
+
+.dot {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 1px solid #c7c7c7;
+}
+
+/* ====== KNAPPER ====== */
+.knapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin: 2rem 0;
+  padding-bottom: 2rem;
+  padding-top: 3rem;
+}
+
+#filters,
+#sorting {
+  display: flex;
+  gap: 10px;
+}
+
+#filters button,
+#sorting button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: #73672c;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+#filters button:hover,
+#sorting button:hover {
+  background-color: #5c5224;
+}
+
+/* ====== DESKTOP ====== */
+@media (min-width: 1024px) {
+  .productContainer {
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 1200px;
+    gap: 2rem;
+  }
+
+  .products img {
+    height: 300px;
+  }
+
+  .knapper {
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-left: 5rem;
+  }
+}

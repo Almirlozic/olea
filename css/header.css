@@ -10,16 +10,16 @@
   top: 0;
   left: 0;
   right: 0;
-  background-color: #F2EEEB;
+  background-color: #f2eeeb;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 3rem 1.5rem;
   z-index: 9999;
   box-shadow: none;
-  opacity: 0; 
+  opacity: 0;
   transform: translateY(-30px);
-  transition: all 0.5s ease; 
+  transition: all 0.5s ease;
 }
 
 .divider {
@@ -162,8 +162,8 @@
 }
 .hero img {
   width: 100%;
-  height: auto; /* lad billedet justere sig naturligt */
-  max-height: 100vh; /* undgå at det fylder mere end én skærm */
+  height: auto;
+  max-height: 100vh;
   object-fit: cover;
   display: block;
 }
@@ -258,17 +258,25 @@
     font-family: "julius";
   }
 
- .hero {
-  position: relative;
-  margin: 0;
-  padding: 0;
-  margin-top: -100px; /* justér efter hvor høj headeren er */
+  .hero {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    margin-top: -100px;
+  }
+  .hero img {
+    width: 100%;
+    height: auto;
+    max-height: 100vh;
+    object-fit: cover;
+    display: block;
+  }
 }
-.hero img {
-  width: 100%;
-  height: auto; /* lad billedet justere sig naturligt */
-  max-height: 100vh; /* undgå at det fylder mere end én skærm */
-  object-fit: cover;
-  display: block;
-}
+
+/* css til siderne pproduct + productlist siden så headeren forbliver og ikke er usynlig ligesom index */
+body#productlist .header {
+  opacity: 1;
+  transform: translateY(0);
+  position: sticky;
+  top: 0;
 }
