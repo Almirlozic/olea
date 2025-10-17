@@ -32,6 +32,7 @@ h1 {
   font-family: "junge";
 }
 
+/* css til produkterne */
 .productContainer {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -115,7 +116,7 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 0.5rem;
+  margin-bottom: -1.5rem;
 }
 
 .title-price h3 {
@@ -128,7 +129,7 @@ h1 {
 
 .title-price .rabat {
   font-weight: bolder;
-  color: #000;
+  color: #000000;
 }
 
 .category {
