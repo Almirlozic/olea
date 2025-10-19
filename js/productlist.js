@@ -5,7 +5,6 @@ const h1 = document.querySelector("h1");
 let allData = [];
 let currentDataset = [];
 
-// Standardkategori
 loadCategory("furniture");
 
 // Klik på en category
@@ -76,30 +75,29 @@ function showProducts(products) {
       ${product.stock === 0 ? `<div class="label">Udsolgt</div>` : ""}
       <a href="product.html?id=${product.id}" class="readmore">
         <img src="${product.thumbnail}" alt="${product.title}" />
-  
+    
         <div class="product-info">
-        <div class="title-price">
-  <h3>${product.title}</h3>
-  </div>
-
-   <div class="category">
+          <div class="title-price">
+            <h3>${product.title}</h3>
+          </div>
+  
+          <div class="category">
             <span>${product.category.toUpperCase()} | ${
       product.brand ? product.brand.toUpperCase() : "BRAND"
     }</span>
           </div>
-
-          <section class="pris">
-  <p class="rabat">${(
-    product.price -
-    product.price * (product.discountPercentage / 100)
-  ).toLocaleString("da-DK")} ,-</p> 
   
-  <div class="discounted">
-            <p class="price">${product.price.toLocaleString("da-DK")} ,-</p>
-          </div>
-  </section>
-        
-  </section>
+          <section class="pris">
+            <p class="rabat">${(
+              product.price -
+              product.price * (product.discountPercentage / 100)
+            ).toLocaleString("da-DK")} ,-</p> 
+  
+            <div class="discounted">
+              <p class="price">${product.price.toLocaleString("da-DK")} ,-</p>
+            </div>
+          </section>
+  
           <div class="color-dots">
             <span class="dot" style="background-color: #8b7355;"></span>
             <span class="dot" style="background-color: #a50000;"></span>

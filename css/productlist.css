@@ -48,6 +48,10 @@ h1 {
   overflow: hidden;
   width: 100%;
   max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 100%;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -59,7 +63,9 @@ h1 {
 .products a.readmore {
   text-decoration: none;
   color: inherit;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
 .products img {
@@ -68,6 +74,7 @@ h1 {
   object-fit: cover;
   display: block;
   border-radius: 0;
+  flex-shrink: 0;
 }
 
 .badge {
@@ -107,9 +114,12 @@ h1 {
 
 /* ====== PRODUKT INFO (under billedet) ====== */
 .product-info {
-  padding: 1.2rem;
+  flex-grow: 1;
   background-color: #f2eeeb;
-  text-align: left;
+  padding: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .title-price {
@@ -148,7 +158,7 @@ h1 {
 }
 
 .pris {
-  margin-top: 2rem;
+  margin-top: auto;
 }
 
 /* Farveprikker */
