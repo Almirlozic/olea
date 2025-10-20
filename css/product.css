@@ -2,14 +2,16 @@
 /* LAYOUT */
 body{
   background-color: #F2EEEB;
+  text-align: start;
+
 }
 
 .breadcrumbs {
   margin-bottom: 1rem;
   font-size: 14px;
   color: #3E3E3E;
-   grid-column-start: 1;
-      grid-column-end: -1;
+  grid-column-start: 1;
+  grid-column-end: -1;
 }
 
 .breadcrumbs a {
@@ -38,6 +40,7 @@ body{
   padding: 2rem;
   max-width: 900px;
   margin: auto;
+  text-align: justify;
 }
 
 
@@ -96,6 +99,7 @@ body{
 .product-info {
   margin-top: 1rem;
   text-align: left;
+  text-align: start;
 }
 .product-info h2 {
   font-family: 'Julius Sans One', sans-serif;
