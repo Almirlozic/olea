@@ -17,9 +17,11 @@
   padding: 3rem 1.5rem;
   z-index: 9999;
   box-shadow: none;
-  opacity: 0;
-  transform: translateY(-30px);
   transition: all 0.5s ease;
+  opacity: 1;
+  transform: translateY(0);
+  position: sticky;
+  top: 0;
 }
 
 .divider {
@@ -167,14 +169,6 @@
   object-fit: cover;
   display: block;
 }
-.header-scrolled {
-  position: sticky;
-  top: 0;
-  left: 0;
-  opacity: 1;
-  transform: translateY(0);
-  opacity: 1;
-}
 
 /* ====== DESKTOP VERSION ====== */
 @media (min-width: 768px) {
@@ -273,7 +267,7 @@
   }
 }
 
-/* css til siderne pproduct + productlist siden så headeren forbliver og ikke er usynlig ligesom index */
+/* css til siderne product + productlist siden så headeren forbliver og ikke er usynlig ligesom index */
 body#productlist .header {
   opacity: 1;
   transform: translateY(0);
