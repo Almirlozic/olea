@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/footer.css" />
+    <script src="js/index.js" defer></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -50,6 +51,23 @@
     </header>
 
     <main>
+        <!-- Pop-up -->
+  <div id="newsletter-popup" class="popup">
+    <div class="popup-content">
+      <button id="close-popup" class="close-btn">×</button>
+      <h2>SIGN UP FOR OUR NEWSLETTER!</h2>
+      <div class="icon">✉️</div>
+      <p>
+        Get weekly discounts every week before everyone else.
+        Plus a <span class="highlight">10%</span> discount on your next purchase.
+      </p>
+      <form id="newsletter-form">
+        <input type="text" placeholder="Fornavn" required>
+        <input type="email" placeholder="...@gmail.com" required>
+        <button class="signup" type="submit">SIGN UP</button>
+      </form>
+    </div>
+  </div>
       <section class="hero">
         <img src="img/hero.webp" alt="" />
       </section>
