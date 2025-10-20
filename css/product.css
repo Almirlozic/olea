@@ -4,6 +4,28 @@ body{
   background-color: #F2EEEB;
 }
 
+.breadcrumbs {
+  margin-bottom: 1rem;
+  font-size: 14px;
+  color: #3E3E3E;
+   grid-column-start: 1;
+      grid-column-end: -1;
+}
+
+.breadcrumbs a {
+  text-decoration: none;
+  color: #3E3E3E;
+  margin-right: 0.5rem;
+}
+
+.breadcrumbs a::after {
+  content: ">";
+  margin-left: 0.5rem;
+}
+
+.breadcrumbs a:last-child::after {
+  content: "";
+}
 .logo {
   font-family: 'Julius Sans One', sans-serif;
   letter-spacing: 2px;
