@@ -7,10 +7,13 @@
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/product.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <script src="js/product.js" defer></script>
+    <script src="js/header.js" defer></script>
   </head>
 
   <body id="productlist">
@@ -48,7 +51,80 @@
       <script src="js/header.js"></script>
     </header>
 
-    <main></main>
+    <main class="product-page">
+        <section class="product-gallery">
+            <div class="swiper-thumbnail">
+                <div class="column">
+                    <img src="image 45.png" alt="Nature" onclick="myFunction(this);">
+                </div>
+                <div class="column">
+                    <img src="image 33.png" alt="Snow" onclick="myFunction(this);">
+                </div>
+                <div class="column">
+                    <img src="image 45.png" alt="Mountains" onclick="myFunction(this);">
+                </div>
+                <div class="thumb-indicator"></div>
+                <div class="thumb-indicator-container"></div>
+
+            </div>
+            
+            <!-- The expanding image container -->
+            <div class="container">
+
+                <!-- Expanded image -->
+                <img id="expandedImg" src="image 45.png" alt="">
+
+                <!-- Image text -->
+            </div>
+        </section>
+        <section>
+            <!-- Product Info -->
+            <div class="product-info">
+                <h2>Oak Chair</h2>
+                <p class="price">DKK 2.400 ,-</p>
+                <p class="desc">
+                    This armchair combines elegant design with superior comfort.
+                    Its soft fabric, sturdy legs, and ergonomic shape make it perfect for everyday use.
+                </p>
+
+                <!-- Color options -->
+                <div class="colors">
+                    <span class="color brown"></span>
+                    <span class="color red"></span>
+                    <span class="color green"></span>
+                </div>
+
+                <!-- Quantity & Button -->
+                <div class="actions">
+                    <div class="quantity">
+                        <span class="minus">-</span>
+                        <span class="amount">1</span>
+                        <span class="plus">+</span>
+                    </div>
+                    <button class="add-to-basket">Add to basket</button>
+                    <span class="wishlist">♡</span>
+                </div>
+
+                <p class="dimensions">68 cm x 72 cm x 78 cm <br><small>WIDTH x DEPTH x HEIGHT</small></p>
+            </div>
+        </section>
+
+        <!-- Extra Information -->
+        <section class="extra-info">
+            <h3>Product Information</h3>
+            <p>The Nordic Noir Collection celebrates timeless elegance with a modern edge. Each piece is crafted from
+                rich dark oak wood, creating a warm yet sophisticated tone that complements any interior. The sleek
+                black upholstery adds a bold contrast, combining comfort and style in perfect harmony. This refined
+                design, with its clean lines and subtle detailing, brings a touch of mid-century charm to contemporary
+                living spaces.</p>
+
+            <h3>Care and Maintenance</h3>
+            <p>The Nordic Noir Collection celebrates timeless elegance with a modern edge. Each piece is crafted from
+                rich dark oak wood, creating a warm yet sophisticated tone that complements any interior.</p>
+        </section>
+        </section>
+
+    </main>
     <footer>
       <section class="footer-top">
         <div class="info-help">
