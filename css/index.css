@@ -15,14 +15,13 @@
 .category-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
   justify-items: center;
-  margin-bottom: 40px;
+  margin-bottom: 80px;
 }
 
 .category img {
-  width: 130px;
-  height: 130px;
+  width: 160px;
+  height: 160px;
   object-fit: cover;
   border-radius: 50%;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -41,6 +40,7 @@
   display: flex;
   justify-content: center;
 }
+
 .shop-btn {
   background-color: #73672c;
   color: #fff;
@@ -59,6 +59,8 @@
   background-color: #73672c;
 }
 
+
+
 /* collection css mobil */
 
 .collection {
@@ -67,6 +69,7 @@
   background-color: #d7cec4;
   border-radius: 50px;
 }
+
 .collection p {
   line-height: 1.5;
 }
@@ -79,20 +82,28 @@
 /* css desktop */
 
 @media (min-width: 800px) {
-  .categories h2 {
-    font-size: 34px;
+  .category-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 80%;
+    margin: 0 auto;
+    justify-items: center;
+    text-align: center;
+    gap: 10px;
     margin-bottom: 100px;
-    margin-top: 100px;
   }
 
-  .category-grid {
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+  .category {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .category img {
-    width: 180px;
-    height: 180px;
+    width: 210px;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 50%;
   }
 
   .category p {
@@ -104,23 +115,32 @@
     font-size: 16px;
     padding: 15px 45px;
   }
+
+
   .collection {
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 30px;
-    padding: 40px;
-    margin: 150px 80px;
+    grid-template-columns: 1fr 2fr;
+    padding: 60px;
+    margin: 150px 180px;
+    align-items: center;
+    margin-bottom: 210px;
   }
+
+  .collection-text h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    letter-spacing: 2px;
+  }
+
   .collection p {
     line-height: 2;
-    padding: 20px 0;
+    color: #000000;
+    width: 100%;
+    width: 90%;
   }
+
   .collection img {
     width: 100%;
     height: auto;
-    order: 2;
-  }
-  .collection div {
-    order: 2;
   }
 }
