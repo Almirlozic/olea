@@ -81,7 +81,7 @@ function showProducts(products) {
             <h3>${product.title}</h3>
           </div>
   
-          <div class="category">
+          <div class="category_product">
             <span>${product.category.toUpperCase()} | ${
       product.brand ? product.brand.toUpperCase() : "BRAND"
     }</span>
