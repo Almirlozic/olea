@@ -1,7 +1,6 @@
 /* ===== GENERELT LAYOUT ===== */
 body {
   color: #111;
-  font-family: "Century Gothic", "Futura", sans-serif;
   margin: 0;
   padding: 0;
   line-height: 1.7;
@@ -44,7 +43,7 @@ body {
 .grid_2 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 120px 180px;
+  gap: 80px 180px;
   justify-items: center;
   max-width: 900px;
   margin: 0 auto;
@@ -53,7 +52,7 @@ body {
 /* Team members styling */
 .team-member {
   text-align: center;
-  font-size: 14px;
+  font-size: 20px;
 }
 
 .team-member h2 {
