@@ -213,7 +213,7 @@ h1 {
   display: flex;
   align-items: center;
   gap: 10px;
-  margin-left: 8rem;
+justify-content: center;
   margin-bottom: 5rem;
   color: #000000;
   font-weight: bold;
@@ -263,4 +263,15 @@ h1 {
     justify-content: flex-start;
     margin-left: 8.2rem;
   }
+  .range {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: left;
+  margin: 0 125px;
+  margin-bottom: 5rem;
+  color: #000000;
+  font-weight: bold;
+  font-family: "tenor_sans";
+}
 }
