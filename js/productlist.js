@@ -2,6 +2,27 @@ const productlistContainer = document.querySelector(".productContainer");
 const categories = document.querySelectorAll(".category");
 const h1 = document.querySelector("h1");
 
+// Det her kode til index kategorier
+const urlParams = new URLSearchParams(window.location.search);
+const selectedCategory = urlParams.get("category");
+
+if (selectedCategory) {
+  h1.textContent = selectedCategory.toUpperCase();
+
+  const apiCategoryMap = {
+    "Living Room": "furniture",
+    "Dining Room": "furniture",
+    Bedroom: "furniture",
+    Bathroom: "home-decoration",
+  };
+
+  const apiCategory = apiCategoryMap[selectedCategory] || "furniture";
+  loadCategory(apiCategory);
+} else {
+  // Hvis ingen kategori er valgt, vis standard
+  loadCategory("furniture");
+}
+
 let allData = [];
 let currentDataset = [];
 
@@ -26,6 +47,31 @@ function loadCategory(category) {
       showProducts(allData);
     })
     .catch((err) => console.error("Fejl ved hentning af produkter:", err));
+}
+
+// kode til range
+const myRange = document.querySelector("#myRange");
+const maxDisp = document.querySelector("#max");
+const minDisp = document.querySelector("#min");
+
+myRange.addEventListener("input", (event) => {
+  maxDisp.textContent = event.target.value;
+  filterByPrice(event.target.value);
+});
+
+function filterByPrice(maxPrice) {
+  const udsnit = allData.filter((product) => product.price <= maxPrice);
+  currentDataset = udsnit;
+  showProducts(currentDataset);
+}
+
+function highestPrice(arr) {
+  arr.sort((firstItem, secondItem) => firstItem.price - secondItem.price);
+  const highest = arr[arr.length - 1].price;
+  myRange.max = highest;
+  maxDisp.textContent = highest;
+  myRange.min = arr[0].price;
+  minDisp.textContent = arr[0].price;
 }
 
 function showProducts(products) {

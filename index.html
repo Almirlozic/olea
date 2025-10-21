@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/footer.css" />
+    <script src="js/index.js" defer></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -47,43 +48,62 @@
         <div class="line"></div>
       </div>
       <script src="js/header.js"></script>
-      <script src="js/scroll-header.js"></script>
     </header>
 
     <main>
+      <!-- Pop-up -->
+      <div id="newsletter-popup" class="popup">
+        <div class="popup-content">
+          <button id="close-popup" class="close-btn">×</button>
+          <h2>SIGN UP FOR OUR NEWSLETTER!</h2>
+          <div class="icon">✉️</div>
+          <p>
+            Get weekly discounts every week before everyone else. Plus a
+            <span class="highlight">10%</span> discount on your next purchase.
+          </p>
+          <form id="newsletter-form">
+            <input type="text" placeholder="Fornavn" required />
+            <input type="email" placeholder="...@gmail.com" required />
+            <button class="signup" type="submit">SIGN UP</button>
+          </form>
+        </div>
+      </div>
       <section class="hero">
         <img src="img/hero.webp" alt="" />
       </section>
       <div class="categories">
         <h2>WHAT ARE YOU LOOKING FOR?</h2>
         <div class="category-grid">
-          <a href="productlist.html">
+          <a href="productlist.html?category=Living Room">
             <div class="category">
               <img src="img/livingroom1.png" alt="Living Room" />
               <p>LIVING ROOM</p>
             </div>
           </a>
-          <a href="productlist.html">
+          <a href="productlist.html?category=Dining Room">
             <div class="category">
               <img src="img/dinnigroom.png" alt="Dining Room" />
               <p>DINING ROOM</p>
             </div>
           </a>
-          <a href="productlist.html">
+          <a href="productlist.html?category=Bedroom">
             <div class="category">
               <img src="img/bedroom.png" alt="Bedroom" />
               <p>BEDROOM</p>
             </div>
           </a>
-          <a href="productlist.html">
+          <a href="productlist.html?category=Bathroom">
             <div class="category">
               <img src="img/bathroom.png" alt="Bathroom" />
               <p>BATHROOM</p>
             </div>
           </a>
         </div>
+
         <div class="shop-now">
-          <button class="shop-btn">SHOP NOW</button>
+          <a href="productlist.html">
+            <button class="shop-btn">SHOP NOW</button>
+          </a>
         </div>
       </div>
       <section class="collection">
