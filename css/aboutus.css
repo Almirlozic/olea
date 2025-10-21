@@ -1,0 +1,96 @@
+/* ===== GENERELT LAYOUT ===== */
+body {
+  color: #111;
+  font-family: "Century Gothic", "Futura", sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.7;
+}
+
+/* ===== OUR MISSION SECTION ===== */
+.mission {
+  max-width: 700px;
+  margin: 120px auto 160px auto;
+  text-align: left;
+  padding: 0 20px;
+}
+
+.mission h1 {
+  font-size: 32px;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+  font-weight: 400;
+}
+
+.mission p {
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+/* ===== TEAM SECTION ===== */
+.team {
+  text-align: center;
+  padding: 80px 20px 160px 20px;
+}
+
+.team h1 {
+  font-size: 24px;
+  letter-spacing: 2px;
+  margin-bottom: 100px;
+  font-weight: 400;
+}
+
+/* Grid layout for 4 members (2x2) */
+.grid_2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 120px 180px;
+  justify-items: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Team members styling */
+.team-member {
+  text-align: center;
+  font-size: 14px;
+}
+
+.team-member h2 {
+  font-size: 15px;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+  font-weight: 400;
+}
+
+.team-member .role {
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+
+.team-member p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .grid_2 {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+
+  .mission {
+    margin: 80px 20px;
+  }
+
+  .mission h1 {
+    text-align: center;
+  }
+
+  .team h1 {
+    margin-bottom: 60px;
+  }
+}
